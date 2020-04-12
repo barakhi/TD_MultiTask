@@ -12,6 +12,8 @@ our scheme by achieving better results than alternative state-of-the-art approac
 We also demonstrate our advantages in terms of task selectivity, scaling the number of tasks, learning from
 fewer examples and interpretability.
 ```
+## Architecture
+![Image of architecture](https://barakhi.github.com/images/arch.png)
 
 ## Prerequisites
 pytorch - ver 

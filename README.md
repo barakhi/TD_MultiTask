@@ -13,7 +13,9 @@ We also demonstrate our advantages in terms of task selectivity, scaling the num
 fewer examples and interpretability.
 ```
 ## Architecture
-![Image of architecture](https://github.com/barakhi/TD_MultiTask/images/detailed_arch_.png)
+Our architecture consists of three streams: TBD
+
+Here is a detailed illustration based on a LeNet backbone ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch_.png)
 
 ## Prerequisites
 pytorch - ver 

@@ -18,11 +18,11 @@ Our architecture consists of three streams: TBD
 Here is a detailed illustration based on a LeNet backbone ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
 
 ## Prerequisites
-python 3
-pytorch - 1.0 
-torchvision
-numpy
-tqdm
+- python 3
+- pytorch 1.0 
+- torchvision
+- numpy
+- tqdm
 
 ## Getting Started
 Run:

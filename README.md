@@ -15,7 +15,7 @@ fewer examples and interpretability.
 ## Architecture
 Our architecture consists of three streams: TBD
 
-Here is a detailed illustration based on a LeNet backbone ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch_.png)
+Here is a detailed illustration based on a LeNet backbone ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
 
 ## Prerequisites
 pytorch - ver 

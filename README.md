@@ -13,9 +13,10 @@ We also demonstrate our advantages in terms of task selectivity, scaling the num
 fewer examples and interpretability.
 ```
 ## Architecture
-Our architecture consists of three streams: TBD
+Our architecture consists of three streams: BU2 (bottom up 2) is our main recognition network. It performs multi recognition tasks **with only one branch** (requires high task selectivity). The two other streams gather information that will be used to modify the activations along BU2: BU1 (share weights with BU2) extracts the image information. The TD stream combines the image information (in a top-down manner) with the task information and controls the operation of BU2.
 
-Here is a detailed illustration based on a LeNet backbone ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
+Here is a detailed illustration of our architecture ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
+
 
 ## Prerequisites
 - python 3

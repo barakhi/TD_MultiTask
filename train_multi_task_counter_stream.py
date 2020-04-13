@@ -6,9 +6,9 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 import os
-import datasets
-import metrics
-from .lenet_counter_stream import BUTD_aligned_Lenet9
+from data import datasets
+from data import metrics
+from models.lenet_counter_stream import BUTD_aligned_Lenet9
 
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
@@ -155,7 +155,7 @@ def train_multi_task_counter_stream():
             metric_results_list = []
             for t in tasks:
                 metric_results = metric[t].get_result()
-                metric_results_list.append(metric_results[-1])
+                metric_results_list.append(metric_results['acc'])
                 metric[t].reset()
             print(float(torch.mean(torch.FloatTensor(metric_results_list))))
 

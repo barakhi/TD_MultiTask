@@ -13,9 +13,11 @@ We also demonstrate our advantages in terms of task selectivity, scaling the num
 fewer examples and interpretability.
 ```
 ## Architecture
-Our architecture consists of three streams: BU2 (bottom up 2) is our main recognition network. It performs multi recognition tasks **with only one branch** (requires high task selectivity). The two other streams gather information that will be used to modify the activations along BU2: BU1 (share weights with BU2) extracts the image information. The TD stream combines the image information (in a top-down manner) with the task information and controls the operation of BU2.
+Our architecture consists of three streams: BU2 (bottom up 2) is our main recognition network. It performs multi recognition tasks **with only one branch** (requires high task selectivity). The two other streams gather information that will be used to modify the activations along BU2: 
+- BU1 (share weights with BU2) extracts the image information. 
+- The TD stream combines the image information (in a top-down manner) with the task information. Its outputs multiply the activations along BU2 and control the recognition process (tensor-wised, task-dependent and image-aware).
 
-Here is a detailed illustration of our architecture ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
+A detailed illustration of our architecture: ![:](https://github.com/barakhi/TD_MultiTask/blob/master/images/detailed_arch__.png)
 
 
 ## Prerequisites
@@ -28,7 +30,7 @@ Here is a detailed illustration of our architecture ![:](https://github.com/bara
 ## Getting Started
 Run:
 ```
-python train_multi_task_counter_stream.py --param_file=./params/mmnist_counter_9tasks_params.json
+python train_multi_task_counter_stream.py --param_file=./params/mmnist_counter_9tasks_params.json --epochs 100
 ```
 
 ## License
@@ -39,5 +41,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 To Add
 ```
 ## Acknowledgments
-
+```
+To Add
+```
 

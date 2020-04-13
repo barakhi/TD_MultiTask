@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
 
 parser.add_argument('--param_file', default='', type=str, metavar='PATH',
                     help='param file location')
-parser.add_argument('--epochs', default=900, type=int, metavar='N',
+parser.add_argument('--epochs', default=100, type=int, metavar='N',
                     help='number of total epochs to run')
 parser.add_argument('--num_tasks', default=9, type=int, metavar='N',
                     help='number of tasks')

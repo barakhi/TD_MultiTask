@@ -40,10 +40,12 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 **If you find this repository useful cite this paper:**
 ```
-To Add
+@article{levi2020multi,
+  title={Multi-task learning by a top-down control network},
+  author={Levi, Hila and Ullman, Shimon},
+  journal={arXiv preprint arXiv:2002.03335},
+  year={2020}
+}
 ```
-## Acknowledgments
-```
-To Add
-```
+
 

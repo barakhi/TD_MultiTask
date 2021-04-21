@@ -54,8 +54,15 @@ class RunningMetric(object):
 
 def get_metrics(params):
     met = {}
+    if 'rightof' in params['dataset']:
+        for t in range(10):
+            met[t] = RunningMetric(metric_type='ACC', n_classes=10)
+            met['tsk'] = RunningMetric(metric_type='ACC', n_classes=10)
     if 'mnist' in params['dataset']:
         for t in params['tasks']:
             met[t] = RunningMetric(metric_type = 'ACC', n_classes=10)
             met['tsk'] = RunningMetric(metric_type='ACC', n_classes=10)
+    if 'clevr' in params['dataset']:
+        for t in params['tasks']:
+            met[t] = RunningMetric(metric_type='ACC', n_classes=8)
     return met

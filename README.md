@@ -48,6 +48,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledge
 Some of the code (e.g., mmnist dataset) are built upon Multi-Task Learning as Multi-Objective Optimization. Thanks for the great work!
 
+## Citation
 **If you find this repository useful cite this paper:**
 ```
 @article{levi2020multi,

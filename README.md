@@ -33,10 +33,20 @@ A detailed illustration of our architecture: ![:](https://github.com/barakhi/TD_
 Run:
 ```
 python train_multi_task_counter_stream.py --param_file=./params/mmnist_counter_9tasks_params.json --epochs 100
+python train_multi_task_counter_stream_byref.py --param_file=./params/mmnist_counter_9tasks_params_byref.json --epochs 900
+python train_multi_task_counter_stream_clevr.py --param_file=./params/clevr_counter_40cls_params.json --epochs 100
 ```
+
+## ToDo
+- unify code 
+- add pretrained models
+- add cub + celeb experiments
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledge
+Some of the code (e.g., mmnist dataset) are built upon Multi-Task Learning as Multi-Objective Optimization. Thanks for the great work!
 
 **If you find this repository useful cite this paper:**
 ```
